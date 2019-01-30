@@ -1,0 +1,21 @@
+package com.king.boot.bootdemo;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/student")
+public class StudentController {
+
+    @Autowired
+    private StudentProperties studentProperties;
+
+    @RequestMapping("/index")
+    public String index(Model model){
+
+        model.addAttribute("student", studentProperties);
+        return "/student/index";
+    }
+}

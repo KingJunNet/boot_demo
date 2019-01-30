@@ -1,5 +1,5 @@
 server:
   port: 8096
-name: jingyiWang
-age: 2
-content: "name:${name},age:${age}"
+student:
+  name: jingyiWang
+  age: 2
