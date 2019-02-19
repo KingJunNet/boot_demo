@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
 public class AssignmentQueryService {
 
     public Assignment getById(int id){
-
         return new Assignment(id,String.format("king%d",id),1);
     }
 }
